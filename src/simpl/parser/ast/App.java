@@ -12,7 +12,6 @@ import simpl.interpreter.lib.fst;
 import simpl.interpreter.lib.hd;
 import simpl.interpreter.lib.snd;
 import simpl.interpreter.lib.tl;
-import simpl.parser.Symbol;
 import simpl.typing.ArrowType;
 import simpl.typing.Substitution;
 import simpl.typing.Type;

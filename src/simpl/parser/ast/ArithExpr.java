@@ -5,7 +5,6 @@ import simpl.typing.Type;
 import simpl.typing.TypeEnv;
 import simpl.typing.TypeError;
 import simpl.typing.TypeResult;
-import simpl.typing.TypeVar;
 
 public abstract class ArithExpr extends BinaryExpr {
 

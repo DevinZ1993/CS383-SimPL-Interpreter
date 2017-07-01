@@ -30,7 +30,6 @@ public class Seq extends BinaryExpr {
     @Override
     public Value eval(State s) throws RuntimeError {
         // DevinZ
-        Value v1 = l.eval(s);
         return r.eval(s);
     }
 }

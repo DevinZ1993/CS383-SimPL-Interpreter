@@ -1,6 +1,5 @@
 package simpl.parser.ast;
 
-import simpl.interpreter.Int;
 import simpl.interpreter.RefValue;
 import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;

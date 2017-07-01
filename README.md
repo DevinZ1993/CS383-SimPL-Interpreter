@@ -1,24 +1,24 @@
 # SimPL Interpreter
 
-This is the final project of [course CS383 Programming Languages](http://www.cs.sjtu.edu.cn/~kzhu/cs383/) at SJTU --
-the implementation of an interpreter for the programming language SimPL based on the skeleton code v4.2.
-SimPL is a dialect of ML, and it has both functional and imperative language features.
+An interpreter for an ML dialect which has both functional and imperative language features, 
+based on the code skeleton v4.2 provided by [course CS383](http://www.cs.sjtu.edu.cn/~kzhu/cs383/).
+
+![syntax](doc/simpl_syntax.png)
 
 ## Dependencies
 
-src/simpl/parser/java-cup-11a.jar
+[java-cup-11a.jar](http://www2.cs.tum.edu/projects/cup/)
 
-src/simpl/parser/JFlex.jar
+[src/simpl/parser/JFlex.jar](http://jflex.de/download.html)
 
-## Build
+## Build and Run
 
-To begin with, type "make" in src/simpl/parser/ to generate parser code.
+To build, put dependent library jar files into src/simpl/parser/ and run in the root directory:
 
-Then import this project to eclipse with the help of bin/formatter.xml.
+	make -C src/simpl/parser/
+	ant
 
-Finally use eclipse to complile and generate SimPL.jar.
+To run a test:
 
-## Test or Run
-
-    java -jar SimPL.jar doc/examples/xxx.spl
+	java -cp bin/:lib/JFlex.jar:lib/java-cup-11a.jar simpl.interpreter.Interpreter example/[FILE_NAME]
 

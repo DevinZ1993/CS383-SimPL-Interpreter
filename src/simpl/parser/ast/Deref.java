@@ -5,12 +5,9 @@ import simpl.interpreter.RuntimeError;
 import simpl.interpreter.State;
 import simpl.interpreter.Value;
 import simpl.typing.RefType;
-import simpl.typing.Substitution;
-import simpl.typing.Type;
 import simpl.typing.TypeEnv;
 import simpl.typing.TypeError;
 import simpl.typing.TypeResult;
-import simpl.typing.TypeVar;
 
 public class Deref extends UnaryExpr {
 

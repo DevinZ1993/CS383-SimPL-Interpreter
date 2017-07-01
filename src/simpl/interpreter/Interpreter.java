@@ -32,6 +32,7 @@ public class Interpreter {
             e.printStackTrace(System.err);
         }
         catch (Error e) {
+            e.printStackTrace();
             System.err.println("What the f**k?");
         }
     }
@@ -42,26 +43,11 @@ public class Interpreter {
         i.run(filename);
     }
 
-    public static void main(String[] args) {/*
+    public static void main(String[] args) {
        if (args.length<1) {
            System.err.println("No INPUT file. Are your kidding me?");
        } else {
            interpret(args[0]);
-       }*/
-        
-        interpret("doc/examples/plus.spl");/*
-        interpret("doc/examples/factorial.spl");
-        interpret("doc/examples/gcd1.spl");
-        interpret("doc/examples/gcd2.spl");
-        interpret("doc/examples/max.spl");
-        interpret("doc/examples/sum.spl");
-        interpret("doc/examples/map.spl");
-        interpret("doc/examples/pcf.sum.spl");
-        interpret("doc/examples/pcf.even.spl");
-        interpret("doc/examples/pcf.minus.spl");
-        interpret("doc/examples/pcf.factorial.spl");
-        interpret("doc/examples/pcf.fibonacci.spl");
-        interpret("doc/examples/pcf.twice.spl");*/
-        //interpret("doc/examples/pcf.lists.spl");
+       }
     }
 }

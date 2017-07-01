@@ -25,7 +25,7 @@ import java_cup.runtime.Symbol;
 
 %eofval{
     if (yystate() == YYCOMMENT) {
-        throw new ParseError("Comment mismatch, need *) at EOF", yyline, yycolumn);
+        throw new SyntaxError("Comment mismatch, need *) at EOF", yyline, yycolumn);
     }
     return token(EOF, null);
 %eofval}
